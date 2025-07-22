@@ -1,0 +1,103 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px); /* aplica um leve desfoque atrás do overlay */
+}
+
+.modal {
+  background: white;
+  width: 90%;
+  max-width: 800px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding-bottom: var(--spacing-md);
+  padding: 0;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: var(--color-primary);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.content {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+/* Container do carrossel com imagem e botões sobrepostos */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Altura fixa do carrossel */
+  overflow: hidden; /* Garante que nada "vaze" visualmente */
+  border: 5px solid red;
+}
+
+.image {
+  width: 100%;
+  height: 100%; /* Preenche toda a altura definida */
+  object-fit: cover; /* Mantém a imagem preenchendo o espaço */
+  display: block;
+}
+
+/* Estilo base dos botões de navegação (sobrepostos) */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  color: var(--color-primary);
+  border: none;
+  font-size: 3rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 5;
+  transition: background 0.3s;
+}
+
+/* Posição do botão esquerdo */
+.left {
+  left: 1rem;
+}
+
+/* Posição do botão direito */
+.right {
+  right: 1rem;
+}
+
+.nav:hover {
+  /* background: rgba(0, 0, 0, 0.6); */
+}
+
+@media (max-width: 700px) {
+  .carousel {
+    height: 250px;
+  }
+
+  .nav {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .close {
+    top: 0.5rem;
+    right: 0.5rem;
+
+    font-size: 2rem;
+  }
+}

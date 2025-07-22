@@ -1,0 +1,88 @@
+{
+  "depoimentos": [
+    {
+      "id": 1,
+      "name": "João Silva",
+      "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
+      "job": "CEO",
+      "message": "A experiência foi incrível do início ao fim. Atendimento impecável!"
+    },
+    {
+      "id": 2,
+      "name": "Maria Oliveira",
+      "avatar": "https://randomuser.me/api/portraits/women/2.jpg",
+      "job": "Designer",
+      "message": "Adorei o cuidado com os detalhes. Super recomendo!"
+    },
+    {
+      "id": 3,
+      "name": "Carlos Souza",
+      "avatar": "https://randomuser.me/api/portraits/men/3.jpg",
+      "job": "Desenvolvedor",
+      "message": "Trabalho com tecnologia há anos e nunca vi algo tão bem feito."
+    },
+    {
+      "id": 4,
+      "name": "Fernanda Lima",
+      "avatar": "https://randomuser.me/api/portraits/women/4.jpg",
+      "job": "Gerente de Projetos",
+      "message": "A equipe foi extremamente profissional e atenciosa."
+    },
+    {
+      "id": 5,
+      "name": "Ricardo Mendes",
+      "avatar": "https://randomuser.me/api/portraits/men/5.jpg",
+      "job": "CTO",
+      "message": "Resultados consistentes e excelente comunicação. Parabéns!"
+    },
+    {
+      "id": 6,
+      "name": "Juliana Costa",
+      "avatar": "https://randomuser.me/api/portraits/women/6.jpg",
+      "job": "Analista de Marketing",
+      "message": "Superou todas as expectativas. Um case de sucesso."
+    },
+    {
+      "id": 7,
+      "name": "André Gonçalves",
+      "avatar": "https://randomuser.me/api/portraits/men/7.jpg",
+      "job": "UX Designer",
+      "message": "Processo bem organizado e centrado no usuário."
+    },
+    {
+      "id": 8,
+      "name": "Camila Rocha",
+      "avatar": "https://randomuser.me/api/portraits/women/8.jpg",
+      "job": "Product Manager",
+      "message": "Fiquei impressionada com a agilidade e a qualidade da entrega."
+    },
+    {
+      "id": 9,
+      "name": "Thiago Martins",
+      "avatar": "https://randomuser.me/api/portraits/men/9.jpg",
+      "job": "Dev Front-end",
+      "message": "Colaboração excelente. O projeto fluiu muito bem."
+    },
+    {
+      "id": 10,
+      "name": "Patrícia Almeida",
+      "avatar": "https://randomuser.me/api/portraits/women/10.jpg",
+      "job": "QA Tester",
+      "message": "Os testes rodaram lisos. Aplicação sem bugs e bem estável!"
+    },
+    {
+      "id": 11,
+      "name": "Eduardo Ramos",
+      "avatar": "https://randomuser.me/api/portraits/men/11.jpg",
+      "job": "Consultor de TI",
+      "message": "Excelente suporte e atenção aos detalhes técnicos."
+    },
+    {
+      "id": 12,
+      "name": "Larissa Duarte",
+      "avatar": "https://randomuser.me/api/portraits/women/12.jpg",
+      "job": "Scrum Master",
+      "message": "Times bem alinhados e entregas dentro dos prazos. Ótimo trabalho!"
+    }
+  ]
+}

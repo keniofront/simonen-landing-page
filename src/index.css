@@ -1,0 +1,160 @@
+:root {
+  /* Cores */
+  --color-primary: #000000;
+  --color-secondary: #666666;
+  --color-background-base: #c9c9c9;
+  --color-muted: #737373;
+
+  --color-gray-dark: #000000;
+  --color-gray-medium: #5e5e5e;
+  --color-gray-light: #a9a9a9;
+
+  /* Tipografia */
+  --font-family-base: "Roboto", sans-serif;
+  --font-family-secondary: "Roboto", sans-serif;
+  --font-family-accent: "Anton", sans-serif;
+
+  /* Espaçamento */
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+
+  /* Padding */
+  --padding-section: 3rem;
+  --padding-content: 1rem;
+
+  /* Tamanhos padrão */
+  --max-width: 1200px;
+
+  /*
+	A função clamp(min, preferred, max) permite definir um valor responsivo que:
+	- Nunca é menor que o valor mínimo.
+	- Cresce com o tamanho do viewport.
+	- Nunca ultrapassa o valor máximo. 
+	*/
+
+  /* Font Sizes */
+  --font-size-navbar: clamp(0.875rem, 1vw + 0.5rem, 1rem);
+  --font-size-h1: clamp(1.5rem, 2.5vw + 1rem, 2.25rem);
+  --font-size-h2: clamp(1.5rem, 2vw + 0.8rem, 1.875rem);
+  --font-size-h3: clamp(1.25rem, 1.5vw + 0.5rem, 1.5rem);
+  --font-size-h4: clamp(1rem, 1.2vw + 0.4rem, 1.25rem);
+  --font-size-body-lg: clamp(0.95rem, 1vw + 0.4rem, 1.125rem);
+  --font-size-body: clamp(0.875rem, 0.9vw + 0.3rem, 1rem);
+  --font-size-small: clamp(0.75rem, 0.7vw + 0.2rem, 0.875rem);
+
+  /* --font-size-navbar: 1rem; */
+  /* --font-size-h1: 2.25rem; */
+  /* --font-size-h2: 1.875rem; */
+  /* --font-size-h3: 1.5rem; */
+  /* --font-size-h4: 1.25rem; */
+  /* --font-size-body-lg: 1.125rem; */
+  /* --font-size-body: 1rem; */
+  /* --font-size-small: 0.875rem; */
+
+  /* Line Heights */
+  --line-height-hero: 1.2;
+  --line-height-default: 1.5;
+
+  /* Font Weights */
+  --font-weight-bold: 700;
+  --font-weight-extra: 800;
+  --font-weight-black: 900;
+
+  /* Bordas */
+  --border-width-none: 0;
+  --border-width-sm: 2px;
+  --border-width-md: 4px;
+  --border-width-lg: 6px;
+
+  --border-radius-none: 0;
+  --border-radius-sm: 0.5rem;
+  --border-radius-md: 1rem;
+  --border-radius-lg: 1.5rem;
+
+  /* Outras configurações */
+  --navbar-height: 65px;
+
+  /* Responsividade */
+  --break-sm: 480px;
+  --break-md: 768px;
+  --break-lg: 1024px;
+  --break-xl: 1280px;
+}
+
+/* Reset básico */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: var(--font-family-base);
+  scroll-behavior: smooth;
+}
+
+/* Containers Base */
+.section {
+  width: 100%;
+  scroll-margin-top: 40px; /* espaço do topo ao rolar até aqui */
+  border: 1px solid palevioletred;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  border: 1px solid blueviolet;
+}
+
+/* Global Styles */
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+}
+
+p {
+  font-size: var(--font-size-body);
+}
+
+.card {
+  border-width: var(--border-width-sm);
+  border-radius: var(--border-radius-md);
+  border-color: var(--color-primary);
+  border-style: solid;
+  padding: 1rem;
+}
+
+input,
+textarea {
+  font-family: var(--font-family-base);
+}
+
+@media (max-width: 700px) {
+  :root {
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+
+    --padding-section: 1rem;
+  }
+
+  .section {
+    padding: 0 1rem;
+  }
+}

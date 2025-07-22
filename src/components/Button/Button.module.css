@@ -1,0 +1,43 @@
+.button {
+  padding: 1rem 2rem;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-lg);
+  font-size: var(--font-size-body);
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  font-family: var(--font-family-base);
+}
+
+.buttonLarge {
+  font-size: var(--font-size-body-lg);
+  font-weight: var(--font-weight-bold);
+  padding: 1.5rem 2em; /* 12px vertical, 24px horizontal */
+  background-color: var(--color-primary); /* azul vibrante */
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius-lg);
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  text-align: center;
+}
+
+.button:hover {
+  /* Se você quiser escurecer levemente em vez de clarear: color-mix(in srgb, var(--color-primary), black 10%);*/
+  background-color: color-mix(in srgb, var(--color-primary), white 30%);
+}
+
+/* 
+
+O que significa in srgb?
+srgb = Standard Red Green Blue — é o espaço de cor mais comum e suportado por todos os navegadores e monitores.
+
+Ele garante que a mistura de cores seja previsível e consistente com o que você vê normalmente no CSS tradicional (hex, rgb, etc).
+
+Isso diz ao navegador: “Misture 90% da cor ar(--color-primary) com 10% de branco, usando o padrão srgb.”
+
+*/
