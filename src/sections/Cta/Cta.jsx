@@ -1,4 +1,4 @@
-import ButtonLarge from '../../components/Button/ButtonLarge';
+import Button from '../../components/Button/Button';
 import styles from './Cta.module.css';
 
 export default function Cta() {
@@ -10,7 +10,7 @@ export default function Cta() {
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi fuga aperiam voluptates possimus quidem saepe fugiat quibusdam eum ut quis.</p>
 				</div>
 				<div>
-					<ButtonLarge className={styles.button} text={'Lorem ipsum dolor sit amet'} />
+					<Button className={styles.button} text={'Lorem ipsum dolor sit amet'} />
 				</div>
 			</div>
 		</section>

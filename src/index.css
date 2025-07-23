@@ -1,7 +1,8 @@
 :root {
   /* Cores */
-  --color-primary: #000000;
-  --color-secondary: #666666;
+  --color-primary: #FFA60B;
+  --color-secondary: #72829F;
+  --color-base: #1C4273;
   --color-background-base: #c9c9c9;
   --color-muted: #737373;
 
@@ -101,14 +102,14 @@ body {
 .section {
   width: 100%;
   scroll-margin-top: 40px; /* espaço do topo ao rolar até aqui */
-  border: 1px solid palevioletred;
+  /* border: 1px solid palevioletred; */
 }
 
 .container {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  border: 1px solid blueviolet;
+  /* border: 1px solid rgb(189, 226, 43); */
 }
 
 /* Global Styles */
