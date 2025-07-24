@@ -9,8 +9,7 @@
   transition: 0.3s;
   font-weight: 600;
   font-family: var(--font-family-base);
-  /* width: auto; */
-  align-self: start;
+
 }
 
 .button:hover {

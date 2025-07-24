@@ -1,19 +1,22 @@
 .section {
   padding: var(--padding-section);
+  background-image: url('../../assets/about/background-bright-01.jpg');
+background-size: cover;
 }
 
 .cards {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-md);
+  gap: 1rem;
   justify-content: center;
 }
 
 .card {
-  flex: 1 1 320px; /* base: 300px, cresce até preencher */
-  max-width: 320px; /* evita expandir demais */
+  flex: 1;
   overflow: hidden;
-  padding: 0;
+  border: 1px solid white;
+  background-color: hsla(0, 0%, 100%, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 8px #0000003b;
 }
 
 .card img {
@@ -33,28 +36,8 @@
   text-align: center;
 }
 
-.cardDesc {
-  height: 80px;
-  overflow: hidden; /* esconde o restante do texto */
-  /* border: 5px solid red; */
-}
-
-.banner {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  border: 2px solid var(--color-primary);
-  padding: 0.5rem;
-  border-radius: var(--border-radius-md);
-}
-
-.banner .icon {
-  flex: 0 0 16%;
-  height: 100%;
-}
-
-.banner p {
-  text-align: left;
+.cardText h4 {
+  color: var(--color-base);
 }
 
 @media (max-width: 800px) {
@@ -74,7 +57,7 @@
     max-width: 100%;
   }
 
-	.cardDesc{
-		height: 100%;
-	}
+  .cardDesc {
+    height: 100%;
+  }
 }

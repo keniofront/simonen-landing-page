@@ -119,6 +119,7 @@ h1 {
 
 h2 {
   font-size: var(--font-size-h2);
+  color: var(--color-base);
 }
 
 h3 {
@@ -155,7 +156,7 @@ textarea {
     --padding-section: 1rem;
   }
 
-  .section {
+  /* .section {
     padding: 0 1rem;
-  }
+  } */
 }

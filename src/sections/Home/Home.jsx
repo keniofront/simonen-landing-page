@@ -17,7 +17,9 @@ export default function Home() {
       <div className={`container ${styles.container}`}>
         {/* container de texto */}
         <div className={`${styles.textContainer}`}>
+          {/* linha vazia */}
           <div className={styles.textRow}></div>
+          {/* linha de texto */}
           <div className={styles.textRow}>
             {/* Desktop */}
             <h1 className={styles.desktop}>Soluções inteligentes para movimentação de cargas pesadas</h1>
@@ -26,8 +28,9 @@ export default function Home() {
             {/* Mobile */}
             <h1 className={styles.mobile}>Impulsione seu negócio</h1>
             <h3 className={styles.mobile}>Transformamos desafios em oportunidades reais de crescimento.</h3>
-            <Button text="Solicite um orçamento" />
+            <Button className={styles.button} text="Solicite um orçamento" />
           </div>
+          {/* linha de features */}
           <div className={`${styles.textRow} ${styles.featuresContainer}`}>
             <div className={styles.feature}>
               <img src={brazil} alt="" />
