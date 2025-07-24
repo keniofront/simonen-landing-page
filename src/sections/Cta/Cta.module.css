@@ -1,30 +1,77 @@
 .section {
-  padding: var(--padding-section);
+  background-image: url("../../assets/cta/cta-img-01.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width: 100%;
+  /* border: 10px solid blueviolet; */
 }
 
 .container {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--spacing-lg);
+  height: 100%;
+  width: 100%;
+  /* border: 10px solid green; */
 }
 
-.text {
-  flex: 0 0 58%;
+.float {
+  position: absolute;
+  width: var(--max-width);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
   display: flex;
-  flex-direction: column;
-  gap: var(--spacing-sm);
+  /* border: 5px solid yellow; */
 }
 
-.button {
+.float .text {
+  width: 100%;
   flex: 1;
 }
 
-@media (max-width: 800px) {
-  .container {
+.float .empty {
+  width: 100%;
+  flex: 1;
+}
+
+.left {
+  background-color: #1c4273a0;
+  backdrop-filter: blur(5px);
+}
+
+.left,
+.right {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+@media (max-width: 700px) {
+  .section {
+    background-position: 60% center;
+  }
+
+  .float {
+    position: relative;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 100%, 0.05);
+    backdrop-filter: blur(5px);
+  }
+
+  .float .empty {
+    display: none;
+  }
+
+  .text {
+    display: flex;
     flex-direction: column;
-    gap: var(--padding-content);
-    text-align: center;
+    align-items: center;
   }
 }

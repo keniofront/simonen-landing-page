@@ -1,18 +1,22 @@
-import Button from '../../components/Button/Button';
-import styles from './Cta.module.css';
+import Button from "../../components/Button/Button";
+import SectionHeader from "../../components/SectionHeader/SectionHeader";
+
+import styles from "./Cta.module.css";
 
 export default function Cta() {
-	return (
-		<section id='cta' className={`section ${styles.section}`}>
-			<div className={`container card ${styles.container}`}>
-				<div className={styles.text}>
-					<h1>Solicite uma avaliação personalizada</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi fuga aperiam voluptates possimus quidem saepe fugiat quibusdam eum ut quis.</p>
-				</div>
-				<div>
-					<Button className={styles.button} text={'Lorem ipsum dolor sit amet'} />
-				</div>
-			</div>
-		</section>
-	);
+  return (
+    <section id="cta" className={`section ${styles.section}`}>
+      <div className={`${styles.container}`}>
+        <div className={styles.float}>
+          <div className={styles.text}>
+            <SectionHeader white section={"Nossa Especialidade (CTA)"} title={"Engenharia aplicada ao resultado. Projetos completos para movimentação industrial"} />
+            <Button className={styles.button} text={"Lorem ipsum dolor sit amet"} />
+          </div>
+          <div className={styles.empty}></div>
+        </div>
+        <div className={styles.left}></div>
+        <div className={styles.right}></div>
+      </div>
+    </section>
+  );
 }

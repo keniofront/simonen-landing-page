@@ -1,14 +1,15 @@
 :root {
   /* Cores */
-  --color-primary: #FFA60B;
-  --color-secondary: #72829F;
-  --color-base: #1C4273;
-  --color-background-base: #c9c9c9;
-  --color-muted: #737373;
+  --color-primary: #ffa60b;
+  --color-secondary: #72829f;
+  --color-base: #1c4273;
+  --color-white: white;
+  /* --color-background-base: #c9c9c9; */
+  /* --color-muted: #737373; */
 
-  --color-gray-dark: #000000;
-  --color-gray-medium: #5e5e5e;
-  --color-gray-light: #a9a9a9;
+  /* --color-gray-dark: #000000; */
+  /* --color-gray-medium: #5e5e5e; */
+  /* --color-gray-light: #a9a9a9; */
 
   /* Tipografia */
   --font-family-base: "Roboto", sans-serif;
@@ -21,8 +22,8 @@
   --spacing-lg: 3rem;
 
   /* Padding */
-  --padding-section: 3rem;
-  --padding-content: 1rem;
+  --padding-section: 72px;
+  /* --padding-content: 1rem; */
 
   /* Tamanhos padrão */
   --max-width: 1200px;
@@ -41,8 +42,10 @@
   --font-size-h3: clamp(1.25rem, 1.5vw + 0.5rem, 1.5rem);
   --font-size-h4: clamp(1rem, 1.2vw + 0.4rem, 1.25rem);
   --font-size-body-lg: clamp(0.95rem, 1vw + 0.4rem, 1.125rem);
-  --font-size-body: clamp(0.875rem, 0.9vw + 0.3rem, 1rem);
+  --font-size-body: clamp(1rem, 1vw + 0.5rem, 1.125rem);
   --font-size-small: clamp(0.75rem, 0.7vw + 0.2rem, 0.875rem);
+
+  /* --font-size-body: clamp(0.875rem, 0.9vw + 0.3rem, 1rem); */
 
   /* --font-size-navbar: 1rem; */
   /* --font-size-h1: 2.25rem; */
@@ -119,7 +122,6 @@ h1 {
 
 h2 {
   font-size: var(--font-size-h2);
-  color: var(--color-base);
 }
 
 h3 {

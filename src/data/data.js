@@ -17,22 +17,63 @@ export const services = [
   {
     title: "Projetos de Engenharia Industrial",
     desc: "Desenvolvemos soluções completas para movimentação de cargas, desde o dimensionamento até a implantação.",
-    foto: "/src/assets/about/about-img-02.jpg",
+    foto: "/src/assets/services/01.jpg",
   },
   {
     title: "Montagem e Instalação Técnica",
     desc: "Nossa equipe realiza instalações com precisão e segurança, dentro do cronograma e com mínimo impacto operacional.",
-    foto: "/src/assets/about/about-img-03.jpg",
+    foto: "/src/assets/services/02.jpg",
   },
-    {
+  {
     title: "Manutenção Preventiva e Corretiva",
     desc: "Planos inteligentes que evitam paradas não programadas e prolongam a vida útil dos seus equipamentos.",
-    foto: "/src/assets/about/about-img-04.jpg",
+    foto: "/src/assets/services/03.jpg",
   },
-    {
+  {
     title: "Consultoria Técnica Especializada",
     desc: "Diagnóstico e recomendação de melhorias com foco em eficiência operacional, segurança no trabalho e redução de custos com falhas.",
-    foto: "/src/assets/about/about-img-05.jpg",
+    foto: "/src/assets/services/04.jpg",
+  },
+];
+
+export const products = [
+  {
+    title: "Guindastes Industriais",
+    desc: "Modelos de alta capacidade, versáteis e ideais para operações em ambientes complexos. Suporte técnico garantido.",
+    foto: "/src/assets/products/01.jpg",
+  },
+  {
+    title: "Pórticos Móveis e Fixos",
+    desc: "Projetados para suportar cargas extremas com estabilidade e precisão, ideais para pátios, portos e indústrias pesadas.",
+    foto: "/src/assets/products/02.jpg",
+  },
+  {
+    title: "Pontes Rolantes",
+    desc: "Soluções sob medida para movimentação horizontal em galpões, centros logísticos e áreas fabris.",
+    foto: "/src/assets/products/03.jpg",
+  },
+];
+
+export const values = [
+  {
+    title: "Tecnologia de Ponta",
+    desc: "Investimos continuamente em inovação para garantir soluções modernas, conectadas e seguras.",
+    foto: "/src/assets/values/01.png",
+  },
+  {
+    title: "Engenharia Especializada",
+    desc: "Contamos com uma equipe técnica altamente qualificada, com know-how em grandes obras e processos industriais.",
+    foto: "/src/assets/values/02.png",
+  },
+  {
+    title: "Segurança em Primeiro Lugar",
+    desc: "Todos os projetos seguem normas como NR-12, NR-10, e ABNT. Equipe  treinadas e com documentação.",
+    foto: "/src/assets/values/03.png",
+  },
+  {
+    title: "Cobertura Nacional",
+    desc: "Atendimento técnico e logístico em todo o Brasil, com suporte presencial e remoto.",
+    foto: "/src/assets/values/04.png",
   },
 ];
 
@@ -67,42 +108,34 @@ export const projects = [
   {
     id: 1,
     name: "Projeto Alpha",
-    thumb: "/src/assets/cases/alpha-thumb.jpg",
-    images: ["/src/assets/cases/alpha1.jpg", "/src/assets/cases/alpha2.jpg"],
+    thumb: "/src/assets/cases/01.1.jpg",
+    images: ["/src/assets/cases/01.1.jpg", "/src/assets/cases/01.1.jpg"],
     description: "Sistema de gerenciamento.",
     details: "Desenvolvido com React e Node.js. Utilizamos arquitetura limpa.",
   },
   {
     id: 2,
     name: "Projeto Beta",
-    thumb: "/src/assets/cases/beta-thumb.jpg",
-    images: ["/src/assets/cases/beta1.jpg", "/src/assets/cases/beta2.jpg"],
+    thumb: "/src/assets/cases/02.1.jpg",
+    images: ["/src/assets/cases/02.1.jpg", "/src/assets/cases/02.1.jpg"],
     description: "E-commerce de moda.",
     details: "Feito com Next.js, integrações com Stripe e CMS.",
   },
   {
     id: 3,
     name: "Projeto Gama",
-    thumb: "/src/assets/cases/gama-thumb.jpg",
-    images: ["/src/assets/cases/gama1.jpg", "/src/assets/cases/gama2.jpg"],
+    thumb: "/src/assets/cases/03.1.jpg",
+    images: ["/src/assets/cases/03.1.jpg", "/src/assets/cases/03.1.jpg"],
     description: "Landing page de produto.",
     details: "Layout responsivo e acessível com SEO otimizado.",
   },
   {
     id: 4,
-    name: "Projeto Test",
-    thumb: "/src/assets/cases/test-thumb.jpg",
-    images: ["/src/assets/cases/test1.jpg"],
+    name: "Projeto XXX",
+    thumb: "/src/assets/cases/04.1.jpg",
+    images: ["/src/assets/cases/04.1.jpg", "/src/assets/cases/04.1.jpg"],
     description: "Landing page de produto.",
     details: "Layout responsivo e acessível com SEO otimizado.",
-  },
-  {
-    id: 5,
-    name: "Projeto Delta",
-    thumb: "/src/assets/cases/delta-thumb.jpg",
-    images: ["/src/assets/cases/delta1.jpg", "/src/assets/cases/delta2.jpg"],
-    description: "Dashboard analítica.",
-    details: "Criado com React, D3.js e micro frontends.",
   },
 ];
 

@@ -1,54 +1,28 @@
-import styles from './Products.module.css';
-import { services } from '../../data/data';
-import SectionHeader from '../../components/SectionHeader/SectionHeader';
+import styles from "./Products.module.css";
+import { products } from "../../data/data";
+import SectionHeader from "../../components/SectionHeader/SectionHeader";
 
 export default function Products() {
-	return (
-		<section id="services" className={`section ${styles.section}`}>
-			<div className={`container ${styles.container}`}>
-				<SectionHeader section={'Nosso Serviços'} title={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit est quo commodi earum. Vel!'} align="left" />
+  return (
+    <section id="products" className={`section ${styles.section}`}>
+      <div className={`container ${styles.container}`}>
+        <div className={styles.header}>
+          <SectionHeader section={"O Que Fornecemos (PRODUCTS)"} title={"Potência, confiabilidade e segurança em cada equipamento"} description={"Oferecemos uma linha completa de equipamentos para elevação e movimentação de cargas com alto desempenho e conformidade com as normas técnicas brasileiras e internacionais."} align="left" />
+        </div>
 
-				<div className={styles.cards}>
-					{services.map((service, index) => {
-						const Icon = service.icon; // pegar a referência do componente
-						return (
-							// Bloco Card
-							<div className={`card ${styles.card}`} key={index}>
-								<img src={service.foto} alt={service.title} />
-
-								<div className={styles.cardText}>
-									<h3>{service.title}</h3>
-									<p className={styles.cardDesc}>{service.desc}</p>
-
-									{/* Banner dentro do Card */}
-									<div className={styles.banner}>
-										{Icon && <Icon size={24} className={styles.icon} />}
-										<p>{service.banner}</p>
-									</div>
-								</div>
-							</div>
-						);
-					})}
-				</div>
-			</div>
-		</section>
-	);
+        <div className={styles.cards}>
+          {products.map((service, index) => {
+            return (
+              <div className={styles.card} key={index} style={{ backgroundImage: `url(${service.foto})` }}>
+                <div className={styles.hover}>
+                  <h3>{service.title}</h3>
+                  <p className={styles.cardDesc}>{service.desc}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
 }
-
-/* 
-// Importação Nomeada
-
-import { services } from '../../data/data'; -> "Pegue apenas a variável services que está sendo exportada de um arquivo chamado data.js, localizado em ../../data/".
-
-<div>{services.map((service, index) => (<Card key={index} {...service} />))}</div>;
-  |           |        |             |               |           |                                   
-  01          02      03             04              05          06         
-
-01. Crio um container para renderizar o elemento;
-02. Chamo o Array "services" e utilizo o método ".map()" para iterar(percorrer cada elemento);
-03. O  Parametro "service" representa cada item. Poderia ter qualquer nome;
-    Index é uma palavra resevada que representa a posição do elemento no Array;
-04. Para cada item é esecutada uma função que renderiza um elemento;    
-05. Key é obrigatorio no React para identificar itens na ByteLengthQueuingStrategy;
-06. Spread Operator é uma forma de "espalhar" os valores de um objeto ou array;
-*/

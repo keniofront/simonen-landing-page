@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <section id="services" className={`section ${styles.section}`}>
       <div className={`container ${styles.container}`}>
-        <SectionHeader section={"Nossa Especialidade"} title={"Engenharia aplicada ao resultado: projetos completos para movimentação industrial"} description={"Na Simonsen do Brasil, o serviço não termina na entrega do equipamento — começa com o entendimento técnico das suas necessidades."} align="center" />
+        <SectionHeader center section={"Nossa Especialidade (SERVICES)"} title={"Engenharia aplicada ao resultado: projetos completos para movimentação industrial"} description={<p>Na Simonsen do Brasil, o serviço não termina na entrega do equipamento — começa com o entendimento técnico das suas necessidades.</p>}/>
 
         <div className={styles.cards}>
           {services.map((service, index) => {

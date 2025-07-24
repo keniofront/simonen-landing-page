@@ -1,5 +1,7 @@
 .section {
-	padding: var(--padding-section); /* Usa uma variável CSS para o espaçamento */
+  padding: var(--padding-section);
+  background-image: url("../../assets/about/background-bright-01.jpg");
+  background-size: cover;
 }
 
 .text {

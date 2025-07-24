@@ -1,12 +1,12 @@
 .section {
   padding: var(--padding-section);
-  background-image: url('../../assets/about/background-bright-01.jpg');
-background-size: cover;
+  background-image: url("../../assets/about/background-bright-01.jpg");
+  background-size: cover;
 }
 
 .cards {
   display: flex;
-  gap: 1rem;
+  gap: var(--spacing-md);
   justify-content: center;
 }
 

@@ -21,15 +21,40 @@
   justify-content: space-between;
 }
 
-.address {
+.addressContainer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   flex: 0 0 58%;
 }
 
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.cards * {
+  /* background-color: blue; */
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  justify-content: start;
+  gap: 2rem;
+  /* border: 2px solid red; */
+}
+
+.card p {
+  font-size: 16px;
+}
+
 .line {
   width: 100%;
+  border: 1px solid var(--color-base);
 }
 
 .socialContainer {
@@ -41,10 +66,9 @@
   font-weight: var(--font-weight-bold);
 }
 
-.locIcons {
-  font-size: 1.3rem;
-  transform: translateY(4px);
-  margin-right: 4px;
+.card .locIcons {
+  color: var(--color-base);
+  /* width: 25%; */
 }
 
 .socialIcons {
@@ -54,28 +78,22 @@
 }
 
 .icon {
-  color: var(--color-primary);
+  color: var(--color-base);
   font-size: var(--font-size-body-lg);
 }
 
-.map {
-  height: 100%;
-  overflow: hidden;
-  border: var(--border-width-sm) solid var(--color-primary);
-}
 
-.map img {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-}
 
 /* Contact Block */
 .formContainer {
   width: 100%;
   padding: 2rem;
   font-family: var(--font-family-base);
+
+  border: 1px solid white;
+  background-color: hsla(0, 0%, 100%, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 8px #0000003b;
 }
 
 .contact {

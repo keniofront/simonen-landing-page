@@ -8,7 +8,7 @@ import SectionHeader from '../../components/SectionHeader/SectionHeader';
 function CaseCard({ project, onClick }) {
 	return (
 		// Quando o usuário clicar no card, chama a função onClick passando o projeto clicado
-		<div className={`card ${styles.card}`} onClick={() => onClick(project)}>
+		<div className={`${styles.card}`} onClick={() => onClick(project)}>
 			{/* Imagem do projeto (thumb = miniatura), com carregamento otimizado */}
 			<img src={project.thumb} alt={project.name} loading="lazy" />
 
@@ -22,14 +22,14 @@ function CaseCard({ project, onClick }) {
 
 // Componente interno CasesGrid - organiza todos os cards em uma grade
 function CasesGrid({ projects, onSelect }) {
-	return (
-		<div className={styles.grid}>
-			{/* Para cada projeto no array, renderiza um CaseCard */}
-			{projects.map((p) => (
-				<CaseCard key={p.id} project={p} onClick={onSelect} />
-			))}
-		</div>
-	);
+    return (
+        <div className={styles.grid}>
+            {/* Para cada projeto no array, renderiza um CaseCard */}
+            {projects.map((p) => (
+                <CaseCard key={p.id} project={p} onClick={onSelect} />
+            ))}
+        </div>
+    );
 }
 
 // COMPONENTE PRINCIPAL
