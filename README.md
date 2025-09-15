@@ -2,17 +2,16 @@
 
 > Uma landing page moderna e responsiva desenvolvida para empresa de engenharia, demonstrando habilidades em desenvolvimento front-end e design UI/UX.
 
-[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Vercel-000000?style=for-the-badge&logo=vercel)](https://simonsem-landing.vercel.app)
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-Vercel-000000?style=for-the-badge&logo=vercel)](https://simonen-landing-page.vercel.app/)
 
 ![Preview 01](./docs/preview-1.png)
-*Preview Desktop*
+_Preview Desktop_
 
 ![Preview 02](./docs/preview-3.jpg)
-*Preview Mobile*
+_Preview Mobile_
 
 ![Preview 01](./docs/preview-2.jpg)
-*Panorama Geral*
-
+_Panorama Geral_
 
 ![Tecnologias](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -21,7 +20,7 @@
 
 ## 📋 Sobre o Projeto
 
-Landing page tipo **one-page site** desenvolvida para a Simonsem do Brasil, uma empresa de engenharia. Projeto solicitado por um conhecido, desenvolvido com foco em **estudos práticos** e demonstração de competências técnicas em desenvolvimento front-end moderno.
+Landing page tipo **one-page site** desenvolvida para a Simonsem do Brasil, uma empresa de engenharia. Projeto solicitado e desenvolvido com foco em **estudos práticos** e demonstração de competências técnicas em desenvolvimento front-end.
 
 ## 🚀 Tecnologias & Funcionalidades
 
@@ -30,11 +29,11 @@ Landing page tipo **one-page site** desenvolvida para a Simonsem do Brasil, uma 
 **Design:** Adobe Photoshop, Figma
 
 ### ⚡ Principais Features
+
 - Componentização avançada e reutilização de código
 - Integração com API simulada (Google Reviews)
-- Design responsivo com mobile-first approach
+- Design responsivo compatível com interfaces mobile
 - Identidade visual criada do zero
-- Performance otimizada (<2s loading time)
 
 ## 📱 Compatibilidade & Performance
 
@@ -47,25 +46,33 @@ Landing page tipo **one-page site** desenvolvida para a Simonsem do Brasil, uma 
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/simonsem-landing
+git clone https://github.com/keniofront/simonen-landing-page.git
 
-cd simonsem-landing
+cd simonen-landing-page
 
 # Instale dependências e execute
-npm install
-npm run dev
+pnpm install
 
-# Execute o json-server (novo terminal)
-npx json-server --watch db.json --port 3001
+pnpm run dev
+
+# Execute o json-server
+pnpm testimonials
 ```
 
 ## 💡 Principais Aprendizados
 
-- Otimização de performance com Vite e lazy loading
+- Otimização de performance com Vite
 - Implementação de CSS Modules para estilos isolados
 - Simulação realista de APIs com json-server
-- Design responsivo com abordagem mobile-first
+- Design responsivo
 - Gestão completa de projeto: do design à implementação
+
+## 📈 Próximos Passos (Roadmap)
+
+- Migração para Sass
+- Animações e transições
+- Otimização SEO avançada
+- Implementação de testes unitários com Jest
 
 ## 🤝 Contribuição
 
@@ -73,12 +80,9 @@ Este é um projeto de portfólio, mas sugestões e feedbacks são sempre bem-vin
 
 ## 📞 Contato
 
-- **LinkedIn**: [Seu LinkedIn]
-- **Email**: seu.email@exemplo.com
-- **Portfolio**: [Seu Portfolio]
+- **LinkedIn**: https://www.linkedin.com/in/keniofront/
+- **Email**: keniofront@gmail.com
 
 ---
 
 **Desenvolvido com 💙 para demonstrar competências em React e desenvolvimento front-end moderno.**
-
-*Projeto desenvolvido em 2025 seguindo as melhores práticas de desenvolvimento e design.*

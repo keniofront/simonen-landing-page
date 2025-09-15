@@ -18,11 +18,10 @@
 }
 
 .section {
-  scroll-margin-top: 40px;
+  scroll-margin-top: 10px;
 }
 
 .container {
-  /* border: 1px solid rgb(189, 226, 43); */
 }
 
 html,
@@ -34,8 +33,6 @@ body {
 }
 
 /* TEXT STYLES */
-/* Escala: Major Third 1.250 */
-
 h1 {
   font-weight: 700;
   font-size: 3.05rem;
