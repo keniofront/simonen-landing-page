@@ -37,7 +37,7 @@
   background-color: rgba(28, 66, 115, 0.8);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .textContent {
     grid-template-columns: 1fr;
     padding: var(--padding-section-mobile) 1rem;

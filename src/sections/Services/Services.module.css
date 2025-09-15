@@ -47,18 +47,14 @@
   font-size: 24px;
 }
 
-.cardText p {
-  /* font-size: 16px; */
-}
-
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .section {
     padding: var(--padding-section-mobile) 1rem;
   }
 
   .sectionHeader {
-    text-align: center;
     align-items: center;
+    text-align: center;
   }
 
   .cards {

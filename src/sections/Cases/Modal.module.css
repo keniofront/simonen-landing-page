@@ -80,7 +80,7 @@
   /* background: rgba(0, 0, 0, 0.6); */
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .carousel {
     height: 250px;
   }

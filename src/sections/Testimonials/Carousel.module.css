@@ -81,7 +81,7 @@
   background-color: var(--color-base);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .navButton:first-of-type {
     left: 0;
   }
