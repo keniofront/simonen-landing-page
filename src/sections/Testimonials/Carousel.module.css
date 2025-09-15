@@ -1,0 +1,100 @@
+.card {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border: 1px solid white;
+  box-shadow: 0 8px 8px #0000003b;
+  backdrop-filter: blur(5px);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.job {
+  margin: 0.5rem 0;
+  color: #666;
+  font-style: italic;
+}
+
+.message {
+  color: #333;
+}
+
+.carouselContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  height: 350px;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.navButton {
+  position: absolute;
+  top: 35%;
+  z-index: 1;
+  color: --co;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navButton:first-of-type {
+  left: -50px;
+}
+
+.navButton:last-of-type {
+  right: -50px;
+}
+
+.pagination {
+  margin-top: 1rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+.active {
+  background-color: var(--color-base);
+}
+
+@media (max-width: 700px) {
+  .navButton:first-of-type {
+    left: 0;
+  }
+
+  .navButton:last-of-type {
+    right: 0;
+  }
+
+  .carousel {
+    justify-content: start;
+    width: 80%;
+  }
+  .card {
+    flex: 0 0 100%; /* 1 card por linha no mobile */
+  }
+}

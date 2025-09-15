@@ -1,0 +1,177 @@
+.navbar {
+  position: fixed;
+  top: 24px;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--max-width);
+  height: var(--navbar-height);
+  margin: 0 auto;
+  padding: 0 2rem;
+  font-size: 1rem;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(-180deg, rgba(255, 255, 255, 0.1) 0%, rgba(114, 130, 159, 0.1) 100%);
+  border: 1px solid white;
+  border-radius: 50px;
+  box-shadow: 0 8px 8px #0000003b;
+  backdrop-filter: blur(8px) saturate(120%);
+  transition: all 0.3s ease;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--max-width);
+}
+
+.scrolled {
+  top: 0;
+  width: 100%;
+  height: 2.2rem;
+  padding: 0.2rem 2rem;
+  background-color: var(--color-primary);
+  background-image: url("../../assets/home/back-stripe-texture.jpg");
+  background-position: center;
+  background-size: cover;
+  border: none;
+  border-radius: 0;
+}
+
+.scrolled .logo {
+  height: 24px;
+}
+
+.scrolled .links a {
+  transition:
+    font-size 0.3s,
+    padding 0.3s;
+}
+
+.logo {
+  display: block;
+  width: 300px;
+  height: 32px;
+  background-color: white;
+  cursor: pointer;
+  transition: font-size 0.3s;
+  mask-image: url("../../assets/logo-horizontal.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.links a {
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.links a:hover {
+  color: var(--color-secondary);
+}
+
+.hamburger {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 2px 0;
+  background-color: white;
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hamburguer Menu -------------- */
+.ativo span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px); /* gira e move */
+}
+
+.ativo span:nth-child(2) {
+  opacity: 0;
+}
+
+.ativo span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+/* ------------------------------  */
+
+@media (max-width: 900px) {
+  .navbar {
+    /* calcular baseado na margem */
+    width: calc(100% - 2rem);
+    margin: 0 1rem;
+  }
+
+  .scrolled {
+    width: 100%;
+    margin: 0;
+  }
+
+  .links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: flex; /* sempre flex, controla pelo max-height */
+    flex-direction: column;
+    gap: 0;
+    width: 95%;
+    margin: 1rem auto;
+    padding: 1rem 0;
+    overflow: hidden;
+    text-align: end;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(-180deg, rgba(255, 255, 255, 0.9) 0%, rgba(114, 130, 159, 0.9) 100%);
+    border: 1px solid white;
+    border-radius: 1rem;
+    box-shadow: 0 8px 8px #0000003b;
+    transform: translate(40px, -40px) scale(0.95);
+    opacity: 0;
+    backdrop-filter: blur(8px) saturate(120%);
+    /* Começa deslocado para cima e direita */
+    transition:
+      max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.3s,
+      transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+  }
+
+  .links.active {
+    /* valor suficiente para todos os links */
+    /* Vem para baixo e esquerda, posição normal */
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .links a {
+    padding: 1rem 2rem;
+    color: var(--color-base);
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

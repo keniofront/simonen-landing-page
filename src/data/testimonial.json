@@ -1,0 +1,88 @@
+{
+  "depoimentos": [
+    {
+      "id": 1,
+      "name": "João Silva",
+      "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
+      "job": "Diretor de Operações Portuárias",
+      "message": "A Simonsen trouxe soluções que aumentaram nossa eficiência no embarque e desembarque de cargas. Um parceiro estratégico."
+    },
+    {
+      "id": 2,
+      "name": "Maria Oliveira",
+      "avatar": "https://randomuser.me/api/portraits/women/2.jpg",
+      "job": "Engenheira Naval",
+      "message": "O cuidado técnico em cada etapa da montagem foi impressionante. A segurança operacional foi priorizada do início ao fim."
+    },
+    {
+      "id": 3,
+      "name": "Carlos Souza",
+      "avatar": "https://randomuser.me/api/portraits/men/3.jpg",
+      "job": "Coordenador de Manutenção Industrial",
+      "message": "Trabalho na área há anos e nunca vi um projeto de movimentação tão bem executado. Padrão de excelência."
+    },
+    {
+      "id": 4,
+      "name": "Fernanda Lima",
+      "avatar": "https://randomuser.me/api/portraits/women/4.jpg",
+      "job": "Gerente de Projetos de Engenharia",
+      "message": "A equipe foi extremamente profissional, garantindo cumprimento de prazos e qualidade na entrega."
+    },
+    {
+      "id": 5,
+      "name": "Ricardo Mendes",
+      "avatar": "https://randomuser.me/api/portraits/men/5.jpg",
+      "job": "Superintendente de Logística",
+      "message": "Resultados consistentes e comunicação clara. A integração dos sistemas de transporte foi um sucesso."
+    },
+    {
+      "id": 6,
+      "name": "Juliana Costa",
+      "avatar": "https://randomuser.me/api/portraits/women/6.jpg",
+      "job": "Analista de Engenharia de Processos",
+      "message": "O projeto superou as expectativas, aumentando a produtividade e garantindo maior segurança operacional."
+    },
+    {
+      "id": 7,
+      "name": "André Gonçalves",
+      "avatar": "https://randomuser.me/api/portraits/men/7.jpg",
+      "job": "Supervisor de Movimentação de Cargas",
+      "message": "O planejamento e a execução foram impecáveis. Processo organizado, seguro e eficiente."
+    },
+    {
+      "id": 8,
+      "name": "Camila Rocha",
+      "avatar": "https://randomuser.me/api/portraits/women/8.jpg",
+      "job": "Coordenadora de Operações Industriais",
+      "message": "Fiquei impressionada com a agilidade da montagem e a confiabilidade dos equipamentos instalados."
+    },
+    {
+      "id": 9,
+      "name": "Thiago Martins",
+      "avatar": "https://randomuser.me/api/portraits/men/9.jpg",
+      "job": "Engenheiro de Produção",
+      "message": "A integração das soluções foi excelente. O projeto fluiu de forma colaborativa e sem contratempos."
+    },
+    {
+      "id": 10,
+      "name": "Patrícia Almeida",
+      "avatar": "https://randomuser.me/api/portraits/women/10.jpg",
+      "job": "Especialista em Controle de Qualidade",
+      "message": "Os sistemas passaram por todos os testes sem falhas. Entrega estável, segura e com alto padrão técnico."
+    },
+    {
+      "id": 11,
+      "name": "Eduardo Ramos",
+      "avatar": "https://randomuser.me/api/portraits/men/11.jpg",
+      "job": "Consultor em Engenharia Industrial",
+      "message": "Excelente suporte técnico e atenção aos detalhes durante todo o processo de instalação."
+    },
+    {
+      "id": 12,
+      "name": "Larissa Duarte",
+      "avatar": "https://randomuser.me/api/portraits/women/12.jpg",
+      "job": "Coordenadora de Planejamento de Obras",
+      "message": "Os times trabalharam de forma alinhada, com entregas dentro dos prazos e alto nível de profissionalismo."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+.section {
+  padding: var(--padding-section-desktop) 0;
+  background-image: url("../../assets/about/background-bright-01.jpg");
+  background-size: cover;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: hsla(0, 0%, 100%, 0.05);
+  border: 1px solid white;
+  box-shadow: 0 8px 8px #0000003b;
+  backdrop-filter: blur(10px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.cardText h4 {
+  color: var(--color-base);
+  font-size: 24px;
+}
+
+.cardText p {
+  /* font-size: 16px; */
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: var(--padding-section-mobile) 1rem;
+  }
+
+  .sectionHeader {
+    text-align: center;
+    align-items: center;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    /* margin: 0 1rem; */
+  }
+
+  .card img {
+    height: 250px;
+  }
+}

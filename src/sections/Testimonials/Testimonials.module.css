@@ -1,0 +1,28 @@
+.section {
+  padding: var(--padding-section-desktop) 0;
+  background-image: url("../../assets/about/background-bright-01.jpg");
+  background-size: cover;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.sectionHeaderCustom {
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: var(--padding-section-mobile) 1rem;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+  }
+
+
+}
